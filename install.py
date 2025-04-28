@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 """
 Author             : Ms.ambari
@@ -15,118 +15,101 @@ import subprocess
 
 ntfile = ['.module', 'lib']
 
-ubuntu = '' + str(open('.module/jalurU.ms').read())
-termux = '' + str(open('.module/jalurT.ms').read())
-termlb = '' + str(open('.module/ngentot.ms').read())
-instal = '' + str(open('.module/IN.ms').read())
+with open('.module/jalurU.ms', 'r') as file:
+    ubuntu = file.read().strip()
+with open('.module/jalurT.ms', 'r') as file:
+    termux = file.read().strip()
+with open('.module/ngentot.ms', 'r') as file:
+    termlb = file.read().strip()
+with open('.module/IN.ms', 'r') as file:
+    instal = file.read().strip()
 
 
 def _main_():
-    if os.path.isdir('' + ubuntu.strip()):
+    if os.path.isdir(ubuntu):
         if os.getuid() != 0:
-            print '[x] Failed: your must be root'
+            print('[x] Failed: your must be root')
             sys.exit()
 
         if not os.path.isdir(ntfile[0]):
-            print '[x] Failed: no directory module'
+            print('[x] Failed: no directory module')
             sys.exit()
 
         if not os.path.isdir(ntfile[1]):
-            print '[x] Failed: no directory lib'
+            print('[x] Failed: no directory lib')
             sys.exit()
         else:
-
-            print '' + instal.strip()
+            print(instal)
 
             # ==================================================================#
-
-            os.system('python .module/files/' + str(open('.module/A.ms'
-                      ).read()))
-            os.system('python .module/files/' + str(open('.module/B.ms'
-                      ).read()))
-            os.system('python .module/files/' + str(open('.module/C.ms'
-                      ).read()))
-            os.system('python .module/files/' + str(open('.module/D.ms'
-                      ).read()))
-            os.system('python .module/files/' + str(open('.module/E.ms'
-                      ).read()))
-            os.system('python .module/files/' + str(open('.module/F.ms'
-                      ).read()))
-            os.system('python .module/files/' + str(open('.module/G.ms'
-                      ).read()))
-            os.system('python .module/files/' + str(open('.module/H.ms'
-                      ).read()))
+            os.system('python3 .module/files/' + str(open('.module/A.ms').read()))
+            os.system('python3 .module/files/' + str(open('.module/B.ms').read()))
+            os.system('python3 .module/files/' + str(open('.module/C.ms').read()))
+            os.system('python3 .module/files/' + str(open('.module/D.ms').read()))
+            os.system('python3 .module/files/' + str(open('.module/E.ms').read()))
+            os.system('python3 .module/files/' + str(open('.module/F.ms').read()))
+            os.system('python3 .module/files/' + str(open('.module/G.ms').read()))
+            os.system('python3 .module/files/' + str(open('.module/H.ms').read()))
 
             # ==================================================================#
 
             if os.path.isdir('/usr/bin/lib'):
                 os.system('rm -rf /usr/bin/lib')
-                os.system('' + str(open('.module/pindahU.ms').read()))
-                os.system('' + str(open('.module/PindahU.ms').read()))
+                os.system(open('.module/pindahU.ms').read())
+                os.system(open('.module/PindahU.ms').read())
 
             if not os.path.isdir('/usr/bin/lib'):
-                os.system('' + str(open('.module/pindahU.ms').read()))
-                os.system('' + str(open('.module/PindahU.ms').read()))
+                os.system(open('.module/pindahU.ms').read())
+                os.system(open('.module/PindahU.ms').read())
 
             # ==================================================================#
 
-            print '' + str(open('.module/DU.la').read())
-            print '' + str(open('.module/Du').read())
-            os.system('python .JM.xn')
+            print(open('.module/DU.la').read())
+            print(open('.module/Du').read())
+            os.system('python3 .JM.xn')
 
             # ==================================================================#
 
-    if os.path.isdir('' + termux.strip()):
-        if not os.path.isdir('' + termux.strip()):
+    if os.path.isdir(termux):
+        if not os.path.isdir(termux):
             sys.exit()
 
         if not os.path.isdir(ntfile[0]):
-            print '[x] Failed: no directory module'
+            print('[x] Failed: no directory module')
             sys.exit()
 
         if not os.path.isdir(ntfile[1]):
-            print '[x] Failed: no directory lib'
+            print('[x] Failed: no directory lib')
             sys.exit()
         else:
+            print(instal)
 
-            print '' + instal.strip()
+            # ==============================================================#
+            os.system('python2 .module/' + str(open('.module/A.ms').read()))
+            os.system('python2 .module/' + str(open('.module/B.ms').read()))
+            os.system('python2 .module/' + str(open('.module/C.ms').read()))
+            os.system('python2 .module/' + str(open('.module/D.ms').read()))
+            os.system('python2 .module/' + str(open('.module/E.ms').read()))
+            os.system('python2 .module/' + str(open('.module/F.ms').read()))
+            os.system('python2 .module/' + str(open('.module/G.ms').read()))
+            os.system('python2 .module/' + str(open('.module/H.ms').read()))
 
             # ==============================================================#
 
-            os.system('python2 .module/' + str(open('.module/A.ms'
-                      ).read()))
-            os.system('python2 .module/' + str(open('.module/B.ms'
-                      ).read()))
-            os.system('python2 .module/' + str(open('.module/C.ms'
-                      ).read()))
-            os.system('python2 .module/' + str(open('.module/D.ms'
-                      ).read()))
-            os.system('python2 .module/' + str(open('.module/E.ms'
-                      ).read()))
-            os.system('python2 .module/' + str(open('.module/F.ms'
-                      ).read()))
-            os.system('python2 .module/' + str(open('.module/G.ms'
-                      ).read()))
-            os.system('python2 .module/' + str(open('.module/H.ms'
-                      ).read()))
+            if os.path.isdir(termlb):
+                os.system(open('.module/pacar.ms').read())
+                os.system(open('.module/pindahT.ms').read())
+                os.system(open('.module/PINDAHT.txt').read())
+
+            if not os.path.isdir(termlb):
+                os.system(open('.module/pindahT.ms').read())
+                os.system(open('.module/PINDAHT.txt').read())
 
             # ==============================================================#
 
-            if os.path.isdir('' + termlb.strip()):
-                os.system('' + str(open('.module/pacar.ms').read()))
-                os.system('' + str(open('.module/pindahT.ms').read()))
-                os.system('' + str(open('.module/PINDAHT.txt').read()))
-
-            if not os.path.isdir('' + termlb.strip()):
-                os.system('' + str(open('.module/pindahT.ms').read()))
-                os.system('' + str(open('.module/PINDAHT.txt').read()))
-
-            # ==============================================================#
-
-            print '' + str(open('.module/DU.la').read())
-            print '' + str(open('.module/Du').read())
+            print(open('.module/DU.la').read())
+            print(open('.module/Du').read())
             os.system('python2 .JM.xn && cd')
-
 
             # ==============================================================#
 
