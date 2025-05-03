@@ -1,10 +1,10 @@
 #!/usr/bin/python
 
 """
-Author             : Ms.ambari
+Author             : supreme destructor
 contact            : ambari.developer@gmail.com
-Github             : https://github.com/Ranginang67
-my youtube channel : Ms.ambari
+Github             : https://github.com/kinngkolos290
+my youtube channel : destroyertech
 
 subcribe my youtube Channel to learn ethical Hacking ^_^
 """
